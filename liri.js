@@ -57,7 +57,23 @@ axios.get(queryUrl).then(
  
 } else if (method === "do-what-it-says") {
 
-} else if (method ===);
+} else if (method === "movie-this" & search === "") {
+
+  var queryUrl = "http://www.omdbapi.com/?t=" + "Mr Nobody" + "&y=&plot=short&apikey=trilogy";
+  
+  axios.get(queryUrl).then(
+    function(response) {
+      // console.log(response);
+      console.log("Title: " + response.data.Title);
+      console.log("Release Year: " + response.data.Year);
+      console.log("IMDB Rating: " + response.data.imdbRating);
+      console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value);
+      console.log("Country: " + response.data.Country);
+      console.log("Language: " + response.data.Language);
+      console.log("Plot: " + response.data.Plot);
+      console.log("Actors: " + response.data.Actors);
+    }
+  );
 
 
      
