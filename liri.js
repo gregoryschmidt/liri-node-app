@@ -41,10 +41,10 @@ axios.get(queryUrl).then(
   axios.get(queryUrl).then(
     function(response) {
       // console.log(response);
-      for (let i = 0; i < 3; i++) {
+      for (i = 0; i < 3; i++) {
       console.log("Venue: " + response.data[i].venue.name);
       console.log("Location: " + response.data[i].venue.city);
-      console.log("Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+      console.log("Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY") + "\n-------------------------------");
   }}
 );
   
@@ -58,7 +58,7 @@ axios.get(queryUrl).then(
     console.log("Artists: " + response.tracks.items[0].artists[0].name);
     console.log("Song Name: " + response.tracks.items[0].name);
     console.log("Link to Spotify: " + response.tracks.items[0].preview_url);
-    console.log("From the Album: " + response.tracks.items[0].album.name)
+    console.log("From the Album: " + response.tracks.items[0].album.name);
   
   });
 
