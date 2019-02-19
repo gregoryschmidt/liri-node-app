@@ -13,3 +13,5 @@ This is a CLI (command line interface) App intended to handle a few specific req
 
    * `do-what-it-says`
    This will take the arguments in the file random.txt and display the corresponsing information.
+   
+   [![LIRI](http://img.youtube.com/vi/G6R7Fqw85WY/0.jpg)](http://www.youtube.com/watch?v=G6R7Fqw85WY "LIRI")
