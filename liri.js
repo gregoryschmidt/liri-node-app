@@ -41,10 +41,11 @@ axios.get(queryUrl).then(
   axios.get(queryUrl).then(
     function(response) {
       // console.log(response);
-      console.log("Venue: " + response.data[0].venue.name);
-      console.log("Location: " + response.data[0].venue.city);
-      console.log("Date: " + moment(response.data[0].datetime).format("MM/DD/YYYY"));
-  }
+      for (let i = 0; i < 3; i++) {
+      console.log("Venue: " + response.data[i].venue.name);
+      console.log("Location: " + response.data[i].venue.city);
+      console.log("Date: " + moment(response.data[i].datetime).format("MM/DD/YYYY"));
+  }}
 );
   
 } else if (method === "spotify-this-song") {if (search === undefined) {
